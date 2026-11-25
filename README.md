@@ -1,5 +1,6 @@
 # UniversalTravel
 B10- 2026 to 2027.
+Goal: UN10
 
 People with hearing impairments can miss spoken announcements
 about delays, platform changes or emergencies on public transport, making
