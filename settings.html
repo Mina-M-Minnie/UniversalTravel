@@ -28,8 +28,10 @@
       <img src="images/logo-beige.png" alt="Universal Travel – home">
     </a>
     <nav aria-label="Main">
-      <ul class="nav-list">
-        <li><a href="settings.html" aria-current="page">Settings</a></li>
+     <ul class="nav-list">
+        <li><a href="index.html" data-link="live">Live</a></li>
+        <li><a href="missed.html" data-link="missed">Missed</a></li>
+        <li><a href="settings.html" data-link="settings" aria-current="page">Settings</a></li>
       </ul>
     </nav>
   </header>
@@ -167,7 +169,9 @@
             </span>
             <span class="side-label">Menu</span>
           </button>
-          <ul class="menu-panel" id="panelMenu" hidden>
+            <ul class="menu-panel" id="panelMenu" hidden>
+            <li><a href="index.html" data-link="live">Live announcements</a></li>
+            <li><a href="missed.html" data-link="missed">Missed announcements</a></li>
             <li><a href="settings.html" data-link="settings" aria-current="page">Settings</a></li>
             <li><a href="report-error.html" data-link="report">Report an error</a></li>
             <li><button type="button" class="menu-logout" id="logoutBtn">Log out</button></li>
