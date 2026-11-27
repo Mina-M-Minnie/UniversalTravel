@@ -1,4 +1,3 @@
-
 // list of stations and where they are (roughly), used to find the nearest one.
 // in sprint 2/3 this list will come from the back-end instead
 const STATIONS = [
@@ -480,5 +479,4 @@ document.getElementById("logoutBtn").addEventListener("click", () => {
   showStatus("You have been logged out");
   // goes to the login page after the message shows
   setTimeout(() => (window.location.href = SITE_LINKS.login || "login.html"), 1200);
-});
 });
