@@ -21,6 +21,11 @@ form.addEventListener("submit", async (event) => {
     }
 
     try {
+            // demo account for Sprint 1 only - remove when the back-end is ready
+    if (email === "demo@universaltravel.com" && password === "Travel123!") {
+        window.location.href = "index.html";
+        return;
+    }
         const res = await fetch("/api/login", {
             method: "POST",
             headers: {
