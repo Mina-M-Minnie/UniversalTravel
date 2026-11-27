@@ -2,7 +2,7 @@
 
 // built a link js to help hyperlinking become easier
 const SITE_LINKS = {
-  login:    "login.html", // login page
+  login:    "login.html", // login page (Tara)
   home:    "", //home page
   live:       "",          // live announcements (Joshua)
   missed:     "",         // missed announcements (Mina)
