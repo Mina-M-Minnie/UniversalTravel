@@ -1,0 +1,79 @@
+/* login page - uses the colours from style.css */
+.login-page {
+  flex: 1;
+  display: grid;
+  place-items: center;
+  padding: 2rem 1rem;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 24rem;
+  padding: 2rem;
+  background: var(--card);
+  border-radius: 0.8rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.login-logo {
+  display: block;
+  width: 5rem;
+  height: auto;
+  margin: 0 auto 0.5rem;
+  border-radius: 0.4rem;
+}
+
+.login-card h1 {
+  margin: 0 0 1.25rem;
+  font-size: 2.25rem;
+}
+
+.login-card label {
+  display: block;
+  margin: 0.9rem 0 0.3rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 0.55rem 0.7rem;
+  font: inherit;
+  color: var(--text);
+  background: #ffffff;
+  border: 2px solid var(--nav);
+  border-radius: 0.4rem;
+}
+
+/* error message under the boxes */
+.error {
+  margin: 1rem 0 0;
+  padding: 0.5rem 0.7rem;
+  font-size: 0.9rem;
+  text-align: left;
+  color: #1f1a19;
+  background: var(--bad);
+  border-radius: 0.4rem;
+}
+.error::before { content: "✗ "; font-weight: 700; }
+
+/* sign in button */
+#submit {
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 0.6rem 1rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  background: var(--footer);
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+}
+#submit:hover { filter: brightness(1.2); }
+
+/* high contrast mode */
+html[data-contrast="high"] .login-card { border: 2px solid #ffffff; }
+html[data-contrast="high"] .login-card input { background: #000000; color: #ffffff; border-color: #ffffff; }
+html[data-contrast="high"] #submit { background: #ffff00; color: #000000; }
