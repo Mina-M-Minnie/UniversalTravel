@@ -475,9 +475,10 @@ passwordForm.addEventListener("submit", (event) => {
   showPwMessage("Password updated.", "success");  // (this has to come after, or it gets cleared)
   showStatus("Password updated");
 });
-
-// Menu: log out 
+//menu log out:
 document.getElementById("logoutBtn").addEventListener("click", () => {
-  // just a message for now, the real log out comes with the login (week 7)
   showStatus("You have been logged out");
+  // goes to the login page after the message shows
+  setTimeout(() => (window.location.href = SITE_LINKS.login || "login.html"), 1200);
+});
 });
