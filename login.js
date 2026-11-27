@@ -21,7 +21,7 @@ form.addEventListener("submit", async (event) => {
     }
 
     // demo account for Sprint 1 only - remove when the back-end is ready
-    if (email === "demo@universaltravel.com" && password === "Travel123!") {
+    if (email === "laz@laz.com" && password === "Laz12345") {
         window.location.href = "index.html";
         return;
     }
